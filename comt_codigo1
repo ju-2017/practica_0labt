@@ -8,10 +8,10 @@ int main() //esta es la funsion principal
     int i = 10; //se asigna valor  a la  variable i de tipo entero. 
     float a = 1000.0;// se asigna valor a la variable a de tipo flotante
     
-    while(i > 0)
+    while(i > 0)// mientras i sea mayor que 0 se repetira el ciclo 
     {       
-        i /= 2;
-        a /= 10;
+        i /= 2;// el valor de i es divido por 2 y el resultado toma el valor de i 
+        a /= 10;// el valor de a es dividido por 10 y el resultado toma el valor de a 
     }
     
     cout<<"El valor final de la variable 'a' es: "<<a<<endl;
