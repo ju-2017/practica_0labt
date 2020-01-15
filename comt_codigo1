@@ -5,7 +5,7 @@ using namespace std;
 
 int main() //esta es la funsion principal
 {
-    int i = 10; //se asigna valor  a la  variable i de tipo entero. 
+    int i = 10; //se asigna valor  a la  variable i de tipo entero
     float a = 1000.0;// se asigna valor a la variable a de tipo flotante
     
     while(i > 0)// mientras i sea mayor que 0 se repetira el ciclo 
