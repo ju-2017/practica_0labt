@@ -12,7 +12,7 @@ int main() //esta es la funsion principal
     {       
         i /= 2;// el valor de i es divido por 2 y el resultado toma el valor de i 
         a /= 10;// el valor de a es dividido por 10 y el resultado toma el valor de a 
-    }
+    }   //el ciclo seguira retornando y cambiando los valores de  i y a hasta que el valor i sea menor que 1 
     
     cout<<"El valor final de la variable 'a' es: "<<a<<endl;
     return 0;
