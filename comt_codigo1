@@ -10,10 +10,10 @@ int main() //esta es la funsion principal
     
     while(i > 0)// mientras i sea mayor que 0 se repetira el ciclo 
     {       
-        i /= 2;// el valor de i es divido por 2 y el resultado toma el valor de i 
-        a /= 10;// el valor de a es dividido por 10 y el resultado toma el valor de a 
+        i /= 2;// mientras la condicion se cumpla el valor de i es divido por 2 y el resultado toma el valor de i 
+        a /= 10;// mientras la condicion se  cumpla el valor de a es dividido por 10 y el resultado toma el valor de a 
     }   //el ciclo seguira retornando y cambiando los valores de  i y a hasta que el valor i sea menos que 1 ya que este valor es de tipo entero  y no se cuentan los valores decimales 
-    
-    cout<<"El valor final de la variable 'a' es: "<<a<<endl;
+            
+    cout<<"El valor final de la variable 'a' es: "<<a<<endl;// se imprime el resultado de la variable a
     return 0;
 }
