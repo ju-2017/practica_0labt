@@ -9,7 +9,7 @@ int main() // funcion principal
         switch(i) // se evalua la expresion i , la cual en lo siguientes casos se verifica si se cumple.
         {
             case 0: cout<<"0"; // primer caso se imprime 0 si la variable vale 0
-            case 1: cout<<"1"; continue;
+            case 1: cout<<"1"; continue;//Continue nos da la instrucion de romper una iteracion en el ciclo y condicion, y continua con la siguente iteracion
             case 2: cout<<"2"; break;
             default: cout<<"D"; break;
         }
