@@ -4,11 +4,12 @@ using namespace std;
 
 int main() 
 {
-    for(int i = 0; i < 4; ++i)
+    for(int i = 0; i < 4; ++i)// se abre un ciclo for en el cual se crea la variable i, se dice que esa variable debe ser menor a 4
+    // y que a medida que se cumpla un ciclo sumarle 1 a la variable i
     {
-        switch(i)
+        switch(i) // se abre un caso, usando el valor de la variable i
         {
-            case 0: cout<<"0";
+            case 0: cout<<"0"; // primer caso se imprime 0 si la variable vale 0
             case 1: cout<<"1"; continue;
             case 2: cout<<"2"; break;
             default: cout<<"D"; break;
