@@ -2,10 +2,9 @@
 
 using namespace std;
 
-int main() 
+int main() // funcion principal 
 {
-    for(int i = 0; i < 4; ++i)// se abre un ciclo for en el cual se crea la variable i, se dice que esa variable debe ser menor a 4
-    // y que a medida que se cumpla un ciclo sumarle 1 a la variable i
+    for(int i = 0; i < 4; ++i)// esta linea tiene el iterador  la condicion que se debe cumplir y que el i se aumente de uno en uno 
     {
         switch(i) // se abre un caso, usando el valor de la variable i
         {
