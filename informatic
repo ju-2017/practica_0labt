@@ -1,1 +1,26 @@
+#include<iostream>
 
+using namespace std;
+
+void inforMatic(int num)
+{
+   if(num % 3 == 0){
+       cout<<"Infor"<<num<<endl;
+    }
+   if(num % 5 == 0){
+       cout<<"Matic"<<num<<endl;
+    }
+   if(num % 5 == 0 && num % 3 == 0){
+       cout<<"InforMatic"<<num<<endl;
+    }
+
+   if(num % 5 != 0 && num % 3 != 0){
+       cout<<num<<endl;
+     }
+}
+
+int main()
+{
+    for(int i=0; i<21; ++i)
+        inforMatic(i);
+}
