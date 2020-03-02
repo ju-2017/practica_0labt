@@ -1,1 +1,61 @@
+#include <iostream>
 
+using namespace std;
+
+void cifraData(int arr[], int rondas)
+{
+    int largo = 20;
+    int numarray[largo];
+    int auxarr[largo];
+    cout<<"Ronda inicial :";
+    for (int k=0; k<largo; k++){
+        cout<<arr[k]<<" ";
+        auxarr[k]=arr[k];
+    }
+    cout<<endl;
+    for (int i=0; i<rondas; i++){
+        for (int j=0; j<largo; j++){
+            if (j==0){
+                numarray[j]=(auxarr[largo-1]-auxarr[1]);
+            }
+            else if(j==largo-1){
+                if (j%2==0){
+                    numarray[j]=(auxarr[largo-2]-auxarr[0]);
+                }
+                else{
+                    numarray[j]=(auxarr[largo-2]+auxarr[0]);
+
+                }
+
+            }
+            else if (j%2==0){
+                numarray[j]=(auxarr[j-1]-auxarr[j+1]);
+
+            }
+            else{
+                numarray[j]=(auxarr[j-1]+auxarr[j+1]);
+
+            }
+        }
+        cout<<"Ronda "<<i<<": ";
+        for (int k=0; k<largo; k++){
+            cout<<numarray[k]<<" ";
+            auxarr[k]=numarray[k];
+        }
+        cout<<endl;
+    }
+    cout<<"Ronda final: ";
+    for (int k=0; k<largo; k++){
+        cout<<numarray[k]<<" ";
+    }
+    cout<<endl;
+    // Complete esta función siguiendo las recomendaciones anteriores
+}
+
+int main()
+{
+    int trama[20]={1,45,92,216,28,63,7,18,65,90,33,47,11,46,99,78,55,88,56}; //Trama de ejemplo
+    cifraData(trama, 3); // Llamado de ejemplo
+
+    return 0;
+}
