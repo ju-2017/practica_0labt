@@ -1,1 +1,128 @@
+#include<iostream>
+#include<string>
+#include<math.h>
+
+
+using namespace std;
+
+/*
+int NumStringToInt(string numero)
+{
+        // Complete esta función siguiendo las recomendaciones anteriores
+}
+*/
+
+long int NumStringToInt(string);
+
+
+
+ int main()
+{
+
+       // rango de tipo int -2147483645 a 2147483646
+
+ cout<<NumStringToInt("-8684")<<endl<<endl;     // dato que ingresa el usuario
+ return 0;
+}
+
+ long int NumStringToInt(string ingreso)
+
+  {
+
+   long int valor=0;             //asignamos un long int que permite valores mayores que int
+  int tamanoIngreso=ingreso.length();     //tamaño del string ingresado
+
+  char cadena[tamanoIngreso];            // declaracion de un array tipo char
+  for (int i=0;i<tamanoIngreso;i++)
+
+    {
+      cadena[i]=ingreso[i];  //casting implicito de char_string a char simple, asignando
+    }
+
+
+  if (cadena[0]==45)   //comienza if de string negativo
+         {
+
+              cadena[0]=48;
+            // cout<<"cadena "<<cadena<<endl;        // Algoritmo de inversion de posiciones de un arreglo
+             char cadenaInvertida[tamanoIngreso];
+
+             for (int i=0;i<tamanoIngreso;i++)
+             for (int j=0;j<tamanoIngreso;j++)
+
+            {
+             char aux=cadena[i];
+             cadena[i]=cadenaInvertida[j];
+             cadenaInvertida[j]=aux;
+             }
+
+        // cout<<"cadena invertida "<<cadenaInvertida<<endl;
+
+
+         for (int i=0; i<tamanoIngreso;i++)
+
+             {
+              valor=valor+((cadenaInvertida[i]-48)*pow(10,i)); //calcula el valor del array sumando los pesos
+              }
+
+
+
+       //valor=valor-(2*valor);
+       valor=-valor;
+      if(valor<-2147483645)
+        {
+          cout<<"ingrese rango adecuado"<<endl;
+          return -1;
+        }
+              else{
+      return valor;
+      }
+
+
+    }  // termina if de string negativo
+
+  else
+    {
+        //  cout<<"cadena "<<cadena;        // Algoritmo de inversion de posiciones de un arreglo
+          char cadenaInvertida[tamanoIngreso];
+          for (int i=0;i<tamanoIngreso;i++)
+          for (int j=0;j<tamanoIngreso;j++)
+
+       {
+
+      char aux=cadena[i];
+      cadena[i]=cadenaInvertida[j];
+      cadenaInvertida[j]=aux;
+
+      }
+
+       // cout<<"cadena invertida "<<cadenaInvertida;
+
+
+
+      for (int i=0; i<tamanoIngreso;i++)
+
+         {
+
+          valor=valor+((cadenaInvertida[i]-48)*pow(10,i)); //calcula el valor del array sumando los pesos
+
+         }
+
+      if(valor>2147483646)
+        {
+          cout<<"ingrese rango adecuado"<<endl;
+          return -1;
+        }
+              else{
+      return valor;
+      }
+    }
+
+
+
+
+
+
+
+}
 
