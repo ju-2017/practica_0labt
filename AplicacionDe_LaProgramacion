@@ -58,4 +58,5 @@ int main()
     cifraData(trama, 3); // Llamado de ejemplo
 
     return 0;
+
 }
